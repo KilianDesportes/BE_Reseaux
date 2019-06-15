@@ -14,7 +14,7 @@ Groupe C
 
 
 
-Developpement d'uun protocole (MICTCP) mettant en œuvre un mécanisme de reprise des pertes « à fiabilité partielle » :
+Developpement d'un protocole (MICTCP) mettant en œuvre un mécanisme de reprise des pertes « à fiabilité partielle » :
 * tolérant un % de pertes « acceptables » par l’application
 * mais conduisant à une meilleure « fluidité » de l’application en cas de pertes
 
