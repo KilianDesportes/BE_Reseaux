@@ -1,6 +1,6 @@
 ## 'Network Protocol' Project &mdash; INSA Toulouse.
 
-Logical continuation of the project 'Internet Applications and Socket Programming' : [AIPS_tp](https://github.com/KilianDesportes/AIPS_tp "AIPS_tp")
+Logical continuation of the project 'Internet Applications and Socket Programming' : [InternetApplicationSocketProgrammingProject](https://github.com/KilianDesportes/InternetApplicationSocketProgramming "InternetApplicationSocketProgrammingProject")
 
 DELIOT Maxence
 
