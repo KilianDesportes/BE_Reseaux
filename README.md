@@ -1,7 +1,6 @@
-Projet 'Bureau d'étude Réseaux', 3e année INSA Toulouse, Pré-orientation MIC.
+## 'Network Protocol' Project &mdash; INSA Toulouse.
 
-Suite logique du projet 'Applications Internet et Programmation Socket ' : [AIPS_tp](https://github.com/KilianDesportes/AIPS_tp "AIPS_tp")
-
+Logical continuation of the project 'Internet Applications and Socket Programming' : [AIPS_tp](https://github.com/KilianDesportes/AIPS_tp "AIPS_tp")
 
 DELIOT Maxence
 
@@ -9,30 +8,25 @@ DESPORTES Kilian
 
 
 3 MIC
-Groupe C
+Group C
 2018-2019.
 
 
-
-Developpement d'un protocole (MICTCP) mettant en œuvre un mécanisme de reprise des pertes « à fiabilité partielle » :
-* tolérant un % de pertes « acceptables » par l’application
-* mais conduisant à une meilleure « fluidité » de l’application en cas de pertes
-
-
-Démontrer au final le bien fondé de MIC-TCP comparativement à TCP lorsque le réseau génère des pertes
-* mais conduisant à une meilleure « fluidité » de l’application en cas de pertes
+Development of a protocol (MICTCP) implementing a "partially reliable" loss recovery mechanism:
+* tolerating a % of "acceptable" losses by the application
+* but leading to a better "fluidity" of the application in case of losses
 
 
-4 versions sont disponibles: 
-* v1 : Phase de transfert de données sans garantie de fiabilité.
-* v2 : Garantie de fiabilité totale via un mécanisme de reprise des pertes de type « Stop and Wait ».
-* v3 : Garantie de fiabilité partielle « statique » via un mécanisme de reprise des pertes de type « Stop and Wait » à fiabilité partielle « pré câblée », i.e. dont le % de pertes admissibles est défini de façon statique.
-* v4 : Phase d’établissement de connexion + Garantie de fiabilité partielle via un mécanisme de reprise des pertes de type « Stop and Wait » dont le % de pertes admissibles est à présent négocié durant la phase d’établissement de connexion.
-
-Génération de l'exécutable via un Makefile : `$ make`
+Demonstrate the merits of PCM-TCP over TCP when the network is generating losses.
+* but leading to a better "fluidity" of the application in case of losses
 
 
-Test du protocole via plusieurs exécutables fournis, *tsock_texte* et *tsock_video*.
+4 versions are available: 
+* v1: Data transfer phase without guarantee of reliability.
+* v2: Guarantee of total reliability via a "Stop and Wait" type loss recovery mechanism.
+* v3: Guarantee of partial "static" reliability via a "Stop and Wait" type loss recovery mechanism with partial "pre-wired" reliability, i.e. with a static defined % of admissible losses.
+* v4: Connection establishment phase + Guarantee of partial reliability via a "Stop and Wait" type loss recovery mechanism whose % of admissible losses is now negotiated during the connection establishment phase.
 
+Generation of the executable via a Makefile: `$ make`.
 
-Note obtenue : 16.5/20
+Test the protocol via several provided executables, *tsock_text* and *tsock_video*.
